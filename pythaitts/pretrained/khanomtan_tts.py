@@ -36,6 +36,8 @@ class KhanomTan:
         self.synthesizer = None
         with open(self.config_path,"r") as f:
             _temp = f.read()
+            print('_temp')
+            print(_temp)
         _temp = _temp.replace("speakers.pth",self.speakers_path)
         _temp = _temp.replace("language_ids.json",self.languages_path)
         _temp = _temp.replace("config_se.json",self.speaker_encoder_config_path)
